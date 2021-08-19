@@ -116,7 +116,8 @@ chai.use(chaiColors)
      //acceder à "my personal information"
      it ('cliquer sur my personal information' , () =>{
         cy.scrollTo('bottom')
-        cy.get(":input[title='Manage my personal information']").click()
+        cy.contains('li', 'My personal information').click()
+        //cy.get(":input[title='Manage my personal information']").click()
        // cy.visit('http://automationpractice.com/index.php?controller=identity')
      })
  
